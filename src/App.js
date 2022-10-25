@@ -59,7 +59,7 @@ export default function App() {
            ready to go.</p>
           </div>
           <div class="column"><img src={rent} alt="rent" width="190px"/>
-          <h1>BookRent out your space</h1><br></br>
+          <h1>Rent out your space</h1><br></br>
             <p>Generate extra income by renting<br></br>
             out your space. Follow easy<br></br> 
             instructions and make your day.</p>
