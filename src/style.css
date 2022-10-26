@@ -413,10 +413,13 @@ footer .con-2{
         color: #fff;
     }
     .sec-3 h1{
+        margin-top: 4rem;
+        margin-top: rem;
         word-spacing: normal;
         font-size: 2rem;
     }
     .sec-3 img{
+        margin-top: 2rem;
         width: 300px;
     }
     /* sec-4 */
@@ -536,7 +539,6 @@ footer .con-2{
         color: #fff;
     }
     .sec-3 h1{
-        margin-top: 2rem;
         word-spacing: normal;
         font-size: 1.5rem;
     }
@@ -544,7 +546,6 @@ footer .con-2{
         font-size: 1rem;
     }
     .sec-3 img{
-        margin-top: 2rem;
         width: 150px;
     }
 
