@@ -98,7 +98,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 92%;
-    animation: slide 20s infinite linear;
+    animation: slide 26s infinite linear;
 }
 
 /* --------------------------------------- */
@@ -180,7 +180,7 @@
 /* --------------------------------------- */
 .sec-4{
     display: flex;
-    height: 120vh;
+    height: 130vh;
     justify-content: center;
     flex-direction: column;
 }
@@ -546,10 +546,14 @@ footer .con-2{
     }
 
     /* sec-2 */
+    .sec-2{
+        height: 90vh;
+    }
     .sec-2 .row{
         flex-direction: column;
     }
     .sec-2 img{
+        margin-top: 2rem;
         width: 55px;
     }
     .sec-2 h1{
@@ -583,7 +587,7 @@ footer .con-2{
 
     /* sec-4 */
     .sec-4{
-        height: 80vh;
+        height: 110vh;
     }
     .sec-4 .col{
         height: 12rem;
@@ -610,6 +614,7 @@ footer .con-2{
     }
 
     /* sec-5 */
+
     .sec-5 h1{
         margin-top: 5rem;
         font-size: 1.5rem;
