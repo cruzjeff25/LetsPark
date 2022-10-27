@@ -3,7 +3,7 @@ import "../styles/terms.css"
 
 const TnC = () => {
   return (
-    <div className='terms'>TnC</div>
+    <div className='terms'>Terms and Conditions</div>
   )
 }
 
