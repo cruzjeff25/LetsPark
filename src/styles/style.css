@@ -515,6 +515,9 @@ footer .con-2{
     }
 
     /* sec-1 */
+    .sec-1{
+        height: 95vh;
+    }
     .sec-1 .text {
         margin-left: 8%;
     }
