@@ -541,7 +541,11 @@ footer .con-2{
         top: 10rem;
         background-size: 92%;
     }
+
     /* sec-2 */
+    .sec-2 .row{
+        flex-direction: column;
+    }
     .sec-2 img{
         width: 55px;
     }
