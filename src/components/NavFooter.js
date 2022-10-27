@@ -30,7 +30,7 @@ const NavFooter = () => {
           <div className='column2'>
             <ul>
               <li>
-                <a href={privacy} target='_blank' className='link'>Privacy Policy</a>
+                <a href={privacy} target='_blank' className='link' rel="noopener noreferrer">Privacy Policy</a>
               </li>
               <li>
                 <Link  className='link' to="/Terms & Conditions">Terms and Conditions</Link>
