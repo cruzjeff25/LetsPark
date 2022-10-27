@@ -1,31 +1,23 @@
 import React from 'react'
-import "../src/style.css"
-import logo from "./img/logo.png"
-import apk from "./LetsPark.apk"
-import mobile from "./img/Mobile.png"
-import parking from "./img/Parking.png"
-import payment from "./img/Payment.png"
-import rent from "./img/Rent.png"
-import register from "./img/register.png"
-import customer from "./img/customer.png"
-import success from "./img/success.png"
-import inprog from "./img/in-progress.jpg"
-import upcoming from "./img/upcoming.jpg"
-import history from "./img/history.jpg"
+import "../styles/style.css"
+import logo from "../img/logo.png"
+import apk from "../LetsPark.apk"
+import mobile from "../img/Mobile.png"
+import parking from "../img/Parking.png"
+import payment from "../img/Payment.png"
+import rent from "../img/Rent.png"
+import register from "../img/register.png"
+import customer from "../img/customer.png"
+import success from "../img/success.png"
+import inprog from "../img/in-progress.jpg"
+import upcoming from "../img/upcoming.jpg"
+import history from "../img/history.jpg"
 
 
-export default function App() {
+export default function Home() {
   return (
     <>
-
-      <div className='nav'>
-        <div className='logo'>
-            <img src={logo} alt="logo" width="120px"/>
-            <h1>Let's Park!</h1>
-        </div>
-        <button><a href={apk} download>Download</a></button>
-      </div>
-    
+  
       <section className='sec-1'>
         <img className='mobile-img' src={mobile} alt="mobile" />
         <div className='img-container'></div>
@@ -131,30 +123,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer>
-        <div className='con-1'>
-          <div className='column1'>
-            <img src={logo} alt="logo" width="200px"/>
-            <h1>Let's Park!</h1>
-          </div>
-          <div className='column2'>
-            <ul>
-              <li><a href='/'>Privacy Policy</a></li>
-              <li><a href='/'>Terms and Conditions</a></li>
-              <li><a href='/'>Guidelines</a></li>
-              <button><a href={apk} download>Download</a></button>
-            </ul>
-          </div>
-        </div>
-        <div className='con-2'>
-          <div>
-            <p>Let's Park is an app developed by four students from Pamantasan ng Lungsod ng Valenzuela</p>
-          </div>
-          <div>
-            <p>&#169; Copyright Let's Park! 2022</p>
-          </div>
-        </div>
-      </footer>
+
     </>
   );
 }
