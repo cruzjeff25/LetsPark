@@ -3,7 +3,6 @@ import {Outlet, Link } from 'react-router-dom'
 import "../styles/style.css"
 import logo from "../img/logo.png"
 import apk from "../LetsPark.apk"
-import privacy from "../privacy.pdf"
 
 const NavFooter = () => {
   return (
@@ -30,7 +29,7 @@ const NavFooter = () => {
           <div className='column2'>
             <ul>
               <li>
-                <a href={privacy} target='_blank' className='link' rel="noopener noreferrer">Privacy Policy</a>
+              <Link  className='link' to="/Privacy Policy">Privacy Policy</Link>
               </li>
               <li>
                 <Link  className='link' to="/Terms & Conditions">Terms and Conditions</Link>

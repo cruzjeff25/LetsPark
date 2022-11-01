@@ -1,0 +1,21 @@
+.privacy{
+    color: #fff;
+    background: #21303e;
+    border-bottom: #fff solid 2px;
+}
+.privacy div{
+    padding: 4% 15%;
+}
+.privacy p{
+    margin: 0% 4%;
+}
+.privacy li{
+    margin: 0% 2%;
+}
+
+.default {
+    margin: 0% 4%;
+}
+.customIndent {
+    margin: 0% 6%;
+}

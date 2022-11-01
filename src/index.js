@@ -7,6 +7,7 @@ import Terms from './components/TnC'
 import Guidelines from './components/Guidelines'
 import NavFooter from './components/NavFooter'
 import ScrollToTop from "./components/ScrollToTop.js"
+import Privacy from './components/privacyPolicy'
 
 
 
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<NavFooter />}>
           <Route index element={<Home />} />
+          <Route path="Privacy Policy" element={<Privacy/>} />
           <Route path="Terms & Conditions" element={<Terms />} />
           <Route path="Guidelines" element={<Guidelines/>} />
           <Route path="*" element={<NoPage />} />
