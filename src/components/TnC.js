@@ -111,8 +111,9 @@ const TnC = () => {
             <li> Using any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site. </li>
           </ul>
           <br/>
-          <br/>
           No use of Let's Park!'s logo or other artwork will be allowed for linking absent a trademark license agreement. 
+          <br/>
+          <br/>
           </p>
           <h3>Content Liability: </h3>
           <br/>
@@ -128,7 +129,7 @@ const TnC = () => {
           </p>
           <br/>
           <br/>
-          <h3>Reservation of Rights: </h3>
+          <h3>Removal of links from our website: </h3>
           <br/>
           <p>
           If you find any link on our Website that is offensive for any reason, you are free to contact and inform us at any moment. We will consider requests to remove links, but we are not obligated to or so or to respond to you directly. 

@@ -1,6 +1,16 @@
+
 .guidelines{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
+    background: #21303e;
+    border-bottom: #fff solid 2px;
+    padding: 4% 15%;
+}
+.guidlines ol{
+    
+}
+.guidelines p{
+    margin: 0% 4%;
+}
+.guidelines li{
+    margin: 1rem 4%;
 }
