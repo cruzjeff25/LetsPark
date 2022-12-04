@@ -94,11 +94,13 @@
     top: 12.5rem;
     border-radius: 12%;
     position: absolute;
-    background: url("../img/img.png");
+    /* background: url("../img/img.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 92%;
-    animation: slide 26s infinite linear;
+    -webkit-animation: slide 20s infinite;
+    animation: slide 20s infinite;
+    transition: background-image 1s ease-in-out;
 }
 
 /* --------------------------------------- */
@@ -361,7 +363,6 @@ footer .con-2{
     0%{
         background-image: url("../img/img.png");
     }
- 
     25%{
         background-image: url("../img/img1.png");
     }
