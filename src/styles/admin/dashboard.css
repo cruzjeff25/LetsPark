@@ -1,0 +1,8 @@
+.dashboard{
+    display: flex;
+    padding-top: 10%;
+    padding-left: 20%;
+    justify-content: center;
+    background: #f0f4f5;
+    height: 80vh;
+}
