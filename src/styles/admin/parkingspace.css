@@ -1,0 +1,145 @@
+.parkingSpace{
+    display: flex;
+    padding-top: 10%;
+    padding-left: 22%;
+    padding-right: 2%;
+    height: 100%;
+    background: #f0f4f5;
+    flex-direction: column;
+}
+.parkingSpace h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888888;
+}
+.parkingSpace .container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+}
+.parkingSpace .container h1{
+    margin: 20px;
+}
+.parkingSpace .container input, select{
+    border: #888888 solid 1px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #888888;
+    padding: .4rem;
+    background: #fff;
+}
+.parkingSpace .container .con{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+/*----------left con----------*/
+.parkingSpace .container .con .left-con{
+    height: 95%;
+    width: 30%;
+    border-right: #f0f4f5 solid 2px;
+    padding-left: 15px;
+}
+
+.parkingSpace .container .con .left-con .img-con{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 10px 10%;
+    border: solid #888888 1px;
+}
+.parkingSpace .container .con .left-con .confirmation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #888888 solid 1px;
+    width: 300px;
+    height: 200px;
+    margin: 20px 0;
+    padding: 10px;
+    line-height: 45px;
+    border-radius: 25px;
+}
+.parkingSpace .container .con .left-con .confirmation p{
+    text-align: center;
+    color: #888888;
+}
+.container .con .left-con .confirmation button{
+    background: #2673c9;
+    color: #fff;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+.parkingSpace .container .con .left-con .confirmation button:hover{
+    background: #4d95e6;
+
+}
+
+/* ---------right con--------- */
+.parkingSpace .container .con .right-con{
+    width: 70%;
+    height: 95%;
+    padding-left: 15px;
+}
+
+/* top */
+.right-con .top{
+    display: flex;
+    flex-direction: row;
+}
+    /*  */
+.right-con .top .left{
+    width: 60%;
+    padding-right: 10px;
+}
+.right-con .top input{
+    width: 90%;
+}
+    /*  */
+.right-con .top .right{
+    width: 40%;
+    padding-right: 10px;
+}
+
+/* bottom */
+.right-con .bottom input{
+    display: flex;
+    width: 92%;
+}
+#info, #rules{
+    border: #888888 solid 1px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #888888;
+    resize: none;
+}
+
+/* ----Views---- */
+.views-nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+}
+.views-nav .link{
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #2367b5;
+}
+.views-nav .link:hover{
+    color: #4d95e6;
+}
+

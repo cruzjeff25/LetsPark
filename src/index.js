@@ -12,8 +12,12 @@ import Admin from './components/admin/Admin'
 import Dashboard from './components/admin/Dashboard'
 import UserAccnts from './components/admin/UserAccnts'
 import AdminAccnts from './components/admin/AdminAccnts'
-import Registered from './components/admin/Registered'
-import Pending from './components/admin/Pending'
+import Registered from './components/admin/ParkingSpace/Registered'
+import Pending from './components/admin/ParkingSpace/Pending'
+import ParkingSpaces from './components/admin/ParkingSpace/ParkingSpaces'
+import ParkingSession from './components/admin/ParkingSpace/ParkingSession'
+import ParkingReviews from './components/admin/ParkingSpace/ParkingReviews'
+import Documents from './components/admin/ParkingSpace/Documents'
 
 
 
@@ -33,8 +37,16 @@ export default function App() {
           <Route index element={<Dashboard />} />
           <Route path="User Accounts" element={<UserAccnts/>} />
           <Route path="Admin Accounts" element={<AdminAccnts/>} />
+          <Route path="ParkingSpaces" element={<ParkingSpaces/>} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+        <Route path="/Admin/ParkingSpaces" element={<Admin />}>
+          <Route index element={<ParkingSpaces/>} />
           <Route path="Registered" element={<Registered/>} />
           <Route path="Pending" element={<Pending/>} />
+          <Route path="ParkingSessions" element={<ParkingSession/>} />
+          <Route path="ParkingReviews" element={<ParkingReviews/>} />
+          <Route path="Documents" element={<Documents/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

@@ -5,9 +5,10 @@
     line-height: 60px;
     flex-direction: column;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-    height: 100vh;
+    height: 100%;
     width: 20%;
     background: #fff;
+    position: fixed;
 }
 .topbar{
     position: absolute;
@@ -26,8 +27,15 @@
     width: 100%;
     background: #f0f4f5;
 }
+.sidebar .link:hover{
+    color: #4d95e6;
+}
 
-.sidebar .link, .navSpaces_active, .navSpaces, .sidebar img{
+
+.sidebar .link, .spaces, .sidebar img{
+    text-decoration: none;
+    color: #696969;
+    font-weight: bold;
     padding-left: 20%;
 }
 

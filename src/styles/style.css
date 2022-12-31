@@ -204,7 +204,7 @@
     justify-content: space-between;
     margin: 0px 15%;
 }
-.label .con{
+.sec-4 .label .con{
     display: flex;
     margin-top: 2rem;
     height: 2rem;
@@ -213,7 +213,7 @@
     align-items: center;
     color: #004797;
 }
-.label h2{
+.sec-4 .label h2{
     text-align: center;
 }
 
@@ -222,7 +222,7 @@
     justify-content: space-between;
     margin: 0% 15%;
 }
-.col{
+.sec-4 .col{
     display: flex;
     height: 26rem;
     width: 20rem;
@@ -232,7 +232,7 @@
     align-items: center;
     overflow: hidden
 }
-.col img{
+.sec-4 .col img{
     object-fit: cover;
 }
 /* --------------------------------------- */
@@ -244,42 +244,42 @@
     flex-direction: row;
     
 }
-.left{
+.sec-5 .left{
     display: flex;
     width: 55%;
 }
-.img-1{
+.sec-5 .img-1{
     border-radius: 1%;
     position: absolute;
     left: 15%;
     top: 385%;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.18);
 }
-.img-2{
+.sec-5 .img-2{
     border-radius: 1%;
     position: absolute;
     left: 15%;
     top: 436%;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.18);
 }
-.img-3{
+.sec-5 .img-3{
     border-radius: 1%;
     position: absolute;
     left: 31%;
     top: 410%;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.18);
 }
-.right{
+.sec-5 .right{
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 6% 15% 0% 8%;
 }
-.right h1{
+.sec-5 .right h1{
     font-size: 3.2rem;
     margin-bottom: 4rem;
 }
-.right p{
+.sec-5 .right p{
     font-size: 1.5rem;
     line-height: 1cm;
 }
@@ -345,7 +345,7 @@ footer .con-2{
     justify-content: space-between;
     margin: 0px 10%;
 }
-.con-2 p{
+footer .con-2 p{
     font-size: .9rem;
     color: #fff;
     margin-top: 10px;
@@ -463,19 +463,19 @@ footer .con-2{
     .sec-5{
         height: 80vh;
     }
-    .img-1{
+    .sec-5 .img-1{
         display: none;
     }
-    .img-2{
+    .sec-5 .img-2{
         display: none;
     }
-    .img-3{
+    .sec-5 .img-3{
         display: none;
     }
-    .left{
+    .sec-5 .left{
         width: 0%;
     }
-    .right{
+    .sec-5 .right{
         display: flex;
         flex-direction: column;
         width: 100%;

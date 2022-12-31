@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/admin/pending.css"
+import "../../../styles/admin/pending.css"
 
 const Pending = () => {
   return (

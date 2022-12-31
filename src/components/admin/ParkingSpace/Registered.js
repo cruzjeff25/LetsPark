@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/admin/registered.css'
+import '../../../styles/admin/registered.css'
 
 const Registered = () => {
   return (
