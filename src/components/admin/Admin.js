@@ -16,7 +16,7 @@ const Admin = () => {
     <>
         <div className='sidebar'>
           
-          <img src={logo} alt="logo" width="160px" height="150px"/>
+          <img src={logo} alt="logo" width="60%" height="20%"/>
           <div className='line'></div>
           <Link  className='link' to="/Admin/" ><GoDashboard/>   Dashboard</Link> 
           <Link  className='link' to="/Admin/User Accounts" ><BiUser/>   User Accounts</Link> 
