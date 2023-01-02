@@ -1,4 +1,4 @@
-.useraccnts{
+.reviews{
     display: flex;
     padding-top: 10%;
     padding-left: 22%;
@@ -7,7 +7,7 @@
     background: #f0f4f5;
     flex-direction: column;
 }
-.useraccnts h1{
+.reviews h1{
     font-size: 1.5rem;
     font-weight: bold;
     color: #888888;
@@ -32,7 +32,7 @@ td{
     color: #888888 ;
 }
 
-.userContainer{
+.reviews .container{
     display: flex;
     height: 100%;
     width: 100%;
@@ -44,7 +44,7 @@ td{
     padding: 16px;
 }
 
-.userContainer input{
+.reviews .container input{
     margin-bottom: 50px;
     border: 2px solid #888888 ;
     width: 30%;
@@ -57,7 +57,7 @@ td{
     font-size: 16px;
 }
 
-.userContainer .search, .userContainer .excel, .userContainer .csv{
+.reviews .container .search, .reviews .container .excel, .reviews .container .csv{
     margin-left: 1%;
     background-color: #4888ff; 
     border-radius: 25px;
@@ -69,6 +69,6 @@ td{
     font-size: 16px;
     cursor: pointer;
 }
-.userContainer .excel, .userContainer .csv{
+.reviews .container .excel, .reviews .container .csv{
     float: right;
 }

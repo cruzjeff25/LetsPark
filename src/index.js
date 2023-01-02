@@ -35,8 +35,8 @@ export default function App() {
         </Route>
         <Route path="/Admin" element={<Admin />}>
           <Route index element={<Dashboard />} />
-          <Route path="User Accounts" element={<UserAccnts/>} />
-          <Route path="Admin Accounts" element={<AdminAccnts/>} />
+          <Route path="UserAccounts" element={<UserAccnts/>} />
+          <Route path="AdminAccounts" element={<AdminAccnts/>} />
           <Route path="ParkingSpaces" element={<ParkingSpaces/>} />
           <Route path="*" element={<NoPage />} />
         </Route>

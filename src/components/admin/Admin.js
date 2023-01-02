@@ -5,11 +5,13 @@ import "../../styles/admin/admin.css"
 import logo from "../../img/logo.png"
 import { GoDashboard } from "react-icons/go";
 import { BiUser } from "react-icons/bi";
+import { FaUserAlt } from "react-icons/fa";
 import {  TbParking } from "react-icons/tb";
 import { RiAdminLine } from "react-icons/ri";
 
 
 const Admin = () => {
+  // parking space drop down
   const [active, setActive] = useState(false);
 
   return (
@@ -19,8 +21,9 @@ const Admin = () => {
           <img src={logo} alt="logo" width="60%" height="20%"/>
           <div className='line'></div>
           <Link  className='link' to="/Admin/" ><GoDashboard/>   Dashboard</Link> 
-          <Link  className='link' to="/Admin/User Accounts" ><BiUser/>   User Accounts</Link> 
+          <Link  className='link' to="/Admin/UserAccounts" ><BiUser/>   User Accounts</Link> 
           
+          {/* parking space drop down */}
           <div className={active ? "navSpaces_active" : "navSpaces"}>
             <Link className='link' onClick={() => {setActive(!active)}}>
             <TbParking/>   Parking Spaces
@@ -31,11 +34,11 @@ const Admin = () => {
             </div>
           </div>
           
-          <Link  className='link' to="/Admin/Admin Accounts"><RiAdminLine/>   Admin Accounts</Link> 
+          <Link  className='link' to="/Admin/AdminAccounts"><RiAdminLine/>   Admin Accounts</Link> 
         </div>
 
         <div className='topbar'>
-          
+          <h1><FaUserAlt/> JUAN MAMA</h1>
         </div>
         <Outlet/>
 

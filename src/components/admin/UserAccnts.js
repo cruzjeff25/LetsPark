@@ -1,11 +1,10 @@
 import React from 'react'
 import "../../styles/admin/useraccnts.css"
-import "../../styles/admin/userContainer.css"
 
 const UserAccnts = () => {
   return (
       <div className='useraccnts'>
-        User Accounts
+        <h1>User Accounts</h1>
         <div className='userContainer'>
           <div>
             <input type="text" placeholder="Search by id, name, phone number"></input>
@@ -13,6 +12,7 @@ const UserAccnts = () => {
             <button className='excel'>EXCEL</button>
             <button className='csv'>CSV</button>
           </div>
+
           <table>
             <thead>
             <tr>
@@ -23,6 +23,14 @@ const UserAccnts = () => {
             </tr>
             </thead>
             <hr></hr>
+            <tbody>
+              <tr>
+                <td>123</td>
+                <td>@yahoo.com</td>
+                <td>najdfdjf</td>
+                <td>09123456789</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
