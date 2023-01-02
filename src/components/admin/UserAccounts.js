@@ -1,10 +1,10 @@
 import React from 'react'
 import "../../styles/admin/useraccnts.css"
 
-const UserAccnts = () => {
+const UserAccounts = () => {
   return (
       <div className='useraccnts'>
-        <h1>User Accounts</h1>
+        <h1>USER ACCOUNTS</h1>
         <div className='userContainer'>
           <div>
             <input type="text" placeholder="Search by id, name, phone number"></input>
@@ -16,7 +16,7 @@ const UserAccnts = () => {
           <table>
             <thead>
             <tr>
-              <th>Id</th>
+              <th>ID</th>
               <th>Email</th>
               <th>Name</th>
               <th>Phone Number</th>
@@ -38,4 +38,4 @@ const UserAccnts = () => {
   )
 }
 
-export default UserAccnts 
+export default UserAccounts 

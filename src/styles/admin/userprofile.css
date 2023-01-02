@@ -1,0 +1,114 @@
+.viewprofile{
+    display: flex;
+    padding-top: 10%;
+    padding-left: 22%;
+    padding-right: 2%;
+    height: 100%;
+    background: #f0f4f5;
+    flex-direction: column;
+}
+.viewprofile h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888888;
+}
+.viewprofile .container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    font-weight: bold;
+}
+.viewprofile .container h1{
+    margin: 20px;
+}
+.viewprofile .container input, select{
+    border: #888888 solid 1px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #888888;
+    padding: .4rem;
+    background: #fff;
+}
+.viewprofile .container .con{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+/*----------left con----------*/
+.viewprofile .container .con .left-con{
+    height: 95%;
+    width: 30%;
+    border-left: #f0f4f5 solid 2px;
+}
+
+.viewprofile .container .con .left-con .img-con{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 10px 10%;
+    border: solid #888888 1px;
+    padding: 1%;
+}
+
+
+/* ---------right con--------- */
+.viewprofile .container .con .right-con{
+    width: 70%;
+    height: 95%;
+    padding-left: 15px;
+}
+
+/* top */
+.viewprofile .right-con .top{
+    display: flex;
+    flex-direction: row;
+}
+    /*  */
+.viewprofile .right-con .top .left{
+    width: 65%;
+    padding-right: 10px;
+}
+.viewprofile .right-con .top input{
+    width:70%;
+}
+    /*  */
+.viewprofile .right-con .top .right{
+    width: 65%;
+    padding-right: 5px;
+}
+
+/* bottom */
+.viewprofile .right-con .bottom input{
+    display: flex;
+    width: 34.5%;
+}
+
+
+/* ----Views---- */
+.viewprofile .views-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+}
+.viewprofile .views-nav .link{
+    margin: 1%;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #2367b5;
+}
+.viewprofile .views-nav .link:hover{
+    color: #4d95e6;
+}
+

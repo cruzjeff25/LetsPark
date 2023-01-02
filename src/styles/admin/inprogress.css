@@ -1,0 +1,91 @@
+.inprogress{
+  display: flex;
+  padding-top: 10%;
+  padding-left: 22%;
+  padding-right: 4%;
+  height: 100%;
+  background: #f0f4f5;
+  flex-direction: column;
+}
+.inprogress h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #888888;
+}
+.fix-width {
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.inprogress table{
+  width: 3000px;
+	margin-bottom: 0;
+	max-width: none;
+}
+
+
+.inprogress th{
+  /* cellpadding */
+  padding: 16px;
+  border: #f0f4f5 solid .5px;
+ 
+}
+.inprogress td{
+  color: #888888 ;
+ 
+}
+
+.inprogressContainer{
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  padding: 16px;
+}
+
+.inprogress .views-nav{
+  float: right;
+}
+
+/*----------------------------------------------------------------------
+.kebab-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.kebab-menu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.kebab-menu button::before {
+  content: "⋮";
+  font-size: 1.5em;
+}
+
+.kebab-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.kebab-menu li {
+  padding: 10px;
+}
+
+.kebab-menu li:hover {
+  background-color: lightgray;
+}
+*/

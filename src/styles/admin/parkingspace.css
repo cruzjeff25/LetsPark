@@ -94,26 +94,26 @@
 }
 
 /* top */
-.right-con .top{
+.parkingSpace.right-con .top{
     display: flex;
     flex-direction: row;
 }
     /*  */
-.right-con .top .left{
+.parkingSpace .right-con .top .left{
     width: 60%;
     padding-right: 10px;
 }
-.right-con .top input{
+.parkingSpace .right-con .top input{
     width: 90%;
 }
     /*  */
-.right-con .top .right{
+.parkingSpace .right-con .top .right{
     width: 40%;
     padding-right: 10px;
 }
 
 /* bottom */
-.right-con .bottom input{
+.parkingSpace .right-con .bottom input{
     display: flex;
     width: 92%;
 }
@@ -127,19 +127,19 @@
 }
 
 /* ----Views---- */
-.views-nav{
+.parkingSpace .views-nav{
     display: flex;
     width: 100%;
     justify-content: center;
     padding: 50px;
 }
-.views-nav .link{
+.parkingSpace .views-nav .link{
     margin: 25px;
     text-decoration: none;
     font-size: 1.3rem;
     color: #2367b5;
 }
-.views-nav .link:hover{
+.parkingSpace .views-nav .link:hover{
     color: #4d95e6;
 }
 
