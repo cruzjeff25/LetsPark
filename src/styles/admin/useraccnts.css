@@ -93,7 +93,7 @@ td{
   
   .kebab-menu button::before {
     content: "⋮";
-    font-size: 1.5em;
+    font-size: 1.25rem;
   }
   
   .kebab-menu ul {
@@ -101,8 +101,9 @@ td{
     margin: 0;
     padding: 10px;
     position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
+    top: calc(100% + 0px);
+
+    right: calc(100% + 0px);
     z-index: 1;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
