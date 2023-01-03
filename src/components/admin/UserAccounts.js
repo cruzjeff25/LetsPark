@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import "../../styles/admin/useraccnts.css"
 
 const UserAccounts = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
       <div className='useraccnts'>
         <h1>USER ACCOUNTS</h1>
@@ -25,10 +27,21 @@ const UserAccounts = () => {
             <hr></hr>
             <tbody>
               <tr>
-                <td>123</td>
-                <td>@yahoo.com</td>
-                <td>najdfdjf</td>
-                <td>09123456789</td>
+                <td>VXXq1jygjMduQlyMCtPZoDXHQWR2</td>
+                <td>chuarex55@gmail.com</td>
+                <td>Chua Rex</td>
+                <td>09123456789
+                <div className="kebab-menu">
+      <button className="kebab-menu" onClick={() => setIsOpen(!isOpen)}></button>
+      {isOpen && (
+        <ul>
+          <li><Link  className='link' to="/Admin/UserAccounts/ViewProfile" > View User Profile</Link> </li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+                </td>
               </tr>
             </tbody>
           </table>
