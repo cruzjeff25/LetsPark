@@ -72,3 +72,48 @@ td{
 .userContainer .excel, .userContainer .csv{
     float: right;
 }
+
+/*----------------------------------------------------------------------*/
+
+
+.kebab-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    
+  }
+  
+  .kebab-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  
+  }
+  
+  .kebab-menu button::before {
+    content: "⋮";
+    font-size: 1.5em;
+  }
+  
+  .kebab-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .kebab-menu li {
+    padding: 10px;
+    
+  }
+  
+  .kebab-menu li:hover {
+    background-color: lightgray;
+  }
+  
