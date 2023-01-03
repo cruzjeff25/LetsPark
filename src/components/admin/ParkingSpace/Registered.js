@@ -39,12 +39,12 @@ const Registered = () => {
             <hr></hr>
             <tbody>
               <tr onClick={routeChange}>
-                <td>123</td>
-                <td>Malinta 2138</td>
+                <td>PS121020216515</td>
+                <td>Arca North Maysan, Valenzuela</td>
                 <td>10</td>
                 <td>Daily</td>
-                <td>12345</td>
-                <td>JEff</td>
+                <td>kzm5656f54sdfsdf654</td>
+                <td>Chua Rex</td>
                 <td className='action-bttn'><RxBorderDotted/></td>
               </tr>
             </tbody>
