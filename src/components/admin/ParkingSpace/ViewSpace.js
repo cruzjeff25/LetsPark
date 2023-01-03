@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import '../../../styles/admin/parkingspace.css'
+import '../../../styles/admin/view.css'
 import logo from '../../../img/logo.png'
 import warning from '../../../img/attention.png'
 
-const ParkingSpaces = () => {
+const View = () => {
   return (
 
     <div className='parkingSpace'>
@@ -51,6 +51,7 @@ const ParkingSpaces = () => {
                 <input id="phone" type="text" value="09123456789" readonly/>
               </div>
               <div className='right'>
+                <br/>
                 <label for="capacity">Capacity</label>
                 <br/>
                 <input id="capacity" type="text" value="10" readonly/>
@@ -85,9 +86,9 @@ const ParkingSpaces = () => {
           </div>
         </div>
         <div className='views-nav'>
-            <Link  className='link' to="/Admin/ParkingSpaces/ParkingSessions" > View Parking Session</Link> 
-            <Link  className='link' to="/Admin/ParkingSpaces/ParkingReviews" > View Parking Reviews</Link> 
-            <Link  className='link' to="/Admin/ParkingSpaces/Documents" > View Documents</Link>
+            <Link  className='link' to="ParkingSessions" > View Parking Session</Link> 
+            <Link  className='link' to="ParkingReviews" > View Parking Reviews</Link> 
+            <Link  className='link' to="Documents" > View Documents</Link>
           </div>
       </div>
     </div>
@@ -96,4 +97,4 @@ const ParkingSpaces = () => {
   )
 }
 
-export default ParkingSpaces
+export default View

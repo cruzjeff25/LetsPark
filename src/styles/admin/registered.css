@@ -1,8 +1,66 @@
 .registered{
     display: flex;
     padding-top: 10%;
-    padding-left: 20%;
-    justify-content: center;
+    padding-left: 22%;
+    padding-right: 4%;
+    height: 100%;
     background: #f0f4f5;
-    height: 80vh;
+    flex-direction: column;
+}
+.registered h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888888;
+}
+tr:hover{
+    background: #f0f4f5;
+}
+
+.registered .capacity, .registered .basis, .registered .action{
+    width: 5%;
+}
+.registered .address{
+    width: 20%;
+}
+
+
+.registered .container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    padding: 16px;
+}
+
+.registered .container input{
+    margin-bottom: 50px;
+    border: 2px solid #888888 ;
+    width: 30%;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.registered .container .search, .registered .container .excel, .registered .container .csv{
+    margin-left: 1%;
+    background-color: #4888ff; 
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.registered .container .excel, .registered .container .csv{
+    float: right;
 }

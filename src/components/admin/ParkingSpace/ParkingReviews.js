@@ -16,7 +16,7 @@ const ParkingReviews = () => {
           <table>
             <thead>
             <tr>
-              <th>Id</th>
+              <th>ID</th>
               <th>Reviewer</th>
               <th>Rate</th>
               <th>Review</th>
