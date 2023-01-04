@@ -11,8 +11,8 @@ const AdminAccnts = () => {
       <div className='adminContainer'>
           <div>
             <input type="text" placeholder="Search by ID or Name"></input>
-            <button className='search'>Search</button>
-            <button className='add'>+Add Admin</button>
+            <button className='search'>SEARCH</button>
+            <button className='add'>+ADD ADMIN</button>
           </div>
           <table>
             <thead>
