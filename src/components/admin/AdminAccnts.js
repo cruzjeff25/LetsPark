@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../styles/admin/adminaccnts.css'
 import "../../styles/admin/adminContainer.css"
 
 
 const AdminAccnts = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='adminaccnts'>
-      ADMIN ACCOUNTS
+      <h1>ADMIN ACCOUNTS</h1>
       <div className='adminContainer'>
           <div>
             <input type="text" placeholder="Search by ID or Name"></input>
@@ -27,7 +28,18 @@ const AdminAccnts = () => {
               <td>032145212301</td>
               <td>ricky_Admin</td>
               <td>Chua Rex</td>
-              <td>True</td>
+              <td>True
+              <div className="kebab-menu">
+      <button className="kebab-menu" onClick={() => setIsOpen(!isOpen)}></button>
+      {isOpen && (
+        <ul>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+              </td>
             </tr>
             <tr>
               <td>032145212301998547</td>

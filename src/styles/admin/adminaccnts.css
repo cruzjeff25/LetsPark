@@ -1,8 +1,14 @@
 .adminaccnts{
     display: flex;
     padding-top: 10%;
-    padding-left: 20%;
-    justify-content: center;
-    background: #f0f4f5;
-    height: 80vh;
+    padding-left: 22%;
+    padding-right: 4%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.adminaccnts h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888888;
 }
