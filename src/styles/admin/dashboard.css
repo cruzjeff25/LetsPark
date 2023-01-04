@@ -18,7 +18,7 @@
     
  
 }
-.box{
+.dashbox{
     background: #fff;
     border-radius: 15px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
@@ -33,7 +33,7 @@
    
 
 }
-.box p{
+.dashbox p{
 	font-size: 65px;
     color: #2169ee; 
     line-height: 30px;
@@ -44,7 +44,7 @@
     font-weight: bold;
     
 }
-.box p span{
+.dashbox p span{
 	font-size: 20px;
 	font-weight: 400;
 	color: #818181;
