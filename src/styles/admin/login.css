@@ -197,21 +197,6 @@
     background-color: rgb(42, 127, 255);
     border-color: rgb(42, 127, 255);
 }
-.leftHalf {
-    background: url(../../img/valmap.png);
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
-    left: 0px;
-    
- }
- 
- .rightHalf {
- 
-    width: 50%;
-    position: absolute;
-    right: 0px;
-    height: 100%;
- }
 
  .split {
   height: 100%;
