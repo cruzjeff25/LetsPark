@@ -20,7 +20,7 @@ const Admin = () => {
           
           <img src={logo} alt="logo" width="60%" height="20%"/>
           <div className='line'></div>
-          <Link  className='link' to="/Admin/" ><GoDashboard/>   Dashboard</Link> 
+          <Link  className='link' to="/Admin/Dashboard" ><GoDashboard/>   Dashboard</Link> 
           <Link  className='link' to="/Admin/UserAccounts" ><BiUser/>   User Accounts</Link> 
           
           {/* parking space drop down */}

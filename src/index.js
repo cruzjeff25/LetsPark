@@ -8,6 +8,7 @@ import Guidelines from './components/Guidelines'
 import NavFooter from './components/NavFooter'
 import ScrollToTop from "./components/ScrollToTop.js"
 import Privacy from './components/privacyPolicy'
+import Login from './components/admin/Login'
 import Admin from './components/admin/Admin'
 import Dashboard from './components/admin/Dashboard'
 import UserAccounts from './components/admin/UserAccounts'
@@ -35,11 +36,17 @@ export default function App() {
           <Route path="Guidelines" element={<Guidelines/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
-        <Route path="/Admin" element={<Admin />}>
-          <Route index element={<Dashboard />} />
+
+        <Route path="/Admin/Login" element={<Login />}>
+          <Route index element={<Login/>} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+
+        <Route path="/Admin/" element={<Admin/>}>
+          <Route path="Dashboard" element={<Dashboard/>} />
           <Route path="UserAccounts" element={<UserAccounts/>} />
           <Route path="AdminAccounts" element={<AdminAccnts/>} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="" element={<NoPage />} />
         </Route>
 
         <Route path="/Admin/UserAccounts/ViewProfile" element={<Admin />}>
