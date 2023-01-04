@@ -224,7 +224,7 @@
 }
 
 /* Control the left side */
-.left {
+.leftside {
   left: 0;
   background-image:
     linear-gradient(to bottom, rgb(255, 255, 255, .4), rgb(42, 127, 255)),
@@ -234,7 +234,7 @@
 }
 
 /* Control the right side */
-.right {
+.rightside {
   right: 0;
   background-color: transparent;
 }

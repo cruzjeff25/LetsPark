@@ -6,14 +6,14 @@ import logo from "../../img/logo.png"
 const Login = () => {
     return(
         <div className='loginContainer'>
-            <div class="split left">
+            <div class="split leftside">
                 <div class="centered">
                 <img src={logo} alt="logo" width="100%"/>
                 <h1>Let's Park!</h1>
                 </div>
             </div>
 
-            <div class="split right">
+            <div class="split rightside">
                 <div class="">
                     <div class="logincard">
                         <div class="cardbody">
