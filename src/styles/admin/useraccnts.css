@@ -1,12 +1,16 @@
+body {
+  background: #f0f4f5;
+}
+
 .useraccnts{
     display: flex;
     padding-top: 10%;
     padding-left: 22%;
     padding-right: 4%;
     height: 100%;
-    background: #f0f4f5;
     flex-direction: column;
 }
+
 .useraccnts h1{
     font-size: 1.5rem;
     font-weight: bold;
@@ -102,7 +106,6 @@ td{
     padding: 10px;
     position: absolute;
     top: calc(100% + 0px);
-
     right: calc(100% + 0px);
     z-index: 1;
     background-color: white;

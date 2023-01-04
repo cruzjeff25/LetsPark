@@ -47,7 +47,7 @@ const UserAccounts = () => {
           </table>
         </div>
       </div>
-  
+
   )
 }
 
