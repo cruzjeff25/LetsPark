@@ -23,9 +23,41 @@ const AdminAccnts = () => {
       <h1>ADMIN ACCOUNTS</h1>
       <div className='adminContainer'>
         <div>
-          <input type="text" placeholder="Search by ID or Name"></input>
+          <input class='input1'type="text" placeholder="Search by ID or Name"></input>
           <button className='search'>SEARCH</button>
-          <button className='add'>ADD ADMIN</button>
+          <a button class="button" className='add'href="#add_admin">ADD ADMIN</a>
+          <div id="add_admin" class="overlay">
+	<div class="popup">
+		<h2>ADD AN ADMIN ACCOUNT</h2>
+    
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <form>
+      <label>First Name:  
+    <input type="text" placeholder="Enter First Name"></input>
+    </label>
+    <label>Last Name:  
+    <input type="text" placeholder="Enter Last Name"></input>
+    </label>
+    
+    <div>
+    <label>Username:  
+    <input type="text" placeholder="Enter Username"></input>
+    </label>
+    <label>Password:  
+    <input type="password" placeholder=""></input>
+    </label>
+    <hr/>
+    <label>Confirm Password:  
+    <input type="password" placeholder=""></input>
+    </label>
+		</div>
+    <button>Add Admin</button>
+    <button >Cancel</button>
+    </form>
+    </div>
+	</div>
+</div>
         </div>
         <table>
           <thead>
