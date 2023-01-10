@@ -50,3 +50,29 @@
 .inprogress .views-nav{
   float: right;
 }
+
+.inprogress .inprogressContainer input{
+  /* margin-bottom: 50px; */
+  border: 2px solid #888888 ;
+  width: 30%;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.inprogress .inprogressContainer .search, .inprogress .inprogressContainer .excel, .inprogress .inprogressContainer .csv{
+  margin-left: 1%;
+  background-color: #4888ff; 
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

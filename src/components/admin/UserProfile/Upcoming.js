@@ -5,31 +5,31 @@ import { firestore } from '../../../firebase';
 import { collection, doc, getDoc, onSnapshot } from "firebase/firestore";
 import ReactLoading from 'react-loading';
 
-const InProgress = () => {
+const Upcoming = () => {
 
   const location = useLocation();
   const userParkingsCollection = collection(firestore, `user-data/${location.state.id}/user-parkings`);
-  const [inProgressParkings, setInProgressParkings] = useState([]);
-  const [noInProgress, setNoInProgress] = useState(false);
+  const [upcomingParkings, setUpcomingParkings] = useState([]);
+  const [noUpcoming, setNoUpcoming] = useState(false);
 
   onSnapshot(userParkingsCollection, (snapshot) => {
     if (snapshot.docs.length > 0) {
-      setNoInProgress(false);
-      let inProgress = [];
+        setNoUpcoming(false);
+      let upcoming = [];
       let now = new Date().getTime();
       snapshot.docs.forEach((doc) => {
-        if (doc.data()["inProgress"] === true && (now >= doc.data()["arrival"] && now < doc.data()["departure"])) {
-          inProgress.push({ ...doc.data(), id: doc.id });
+        if (doc.data()["arrival"] > now) {
+          upcoming.push({ ...doc.data(), id: doc.id });
         }
       });
-      if (inProgress.length > 0) {
-        setInProgressParkings(inProgress);
+      if (upcoming.length > 0) {
+        setUpcomingParkings(upcoming);
       } else {
-        setNoInProgress(true);
+        setNoUpcoming(true);
       }
 
     } else {
-      setNoInProgress(true);
+      setNoUpcoming(true);
     }
 
   });
@@ -41,7 +41,7 @@ const InProgress = () => {
     <div className='inprogress'>
       <h1>USER ACCOUNTS</h1>
       <div className='inprogressContainer'>
-        <h1>VIEW USER IN PROGRESS PARKING-({location.state.name})</h1>
+        <h1>VIEW USER UPCOMING PARKING-({location.state.name})</h1>
         <br />
         <div>
           <input type="text" placeholder="Search by ID or Address"></input>
@@ -51,10 +51,10 @@ const InProgress = () => {
           <Link className='link' to="/Admin/UserAccounts/ViewProfile" > Go back to Profile</Link>
         </div> */}
         <br />
-        {noInProgress ?
+        {noUpcoming ?
           <div style={{ textAlign: "center", fontSize: "14px", color: "gray" }}>
-            <p>No in progress parkings.</p>
-          </div> : inProgressParkings.length == 0 ?
+            <p>No upcoming parkings.</p>
+          </div> : upcomingParkings.length == 0 ?
             <div className='loadingContainer' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
               <ReactLoading type={"bars"} color={"#0096FF"} height={"20px"} width={"20px"} />
             </div> : <div class="fix-width">
@@ -74,7 +74,7 @@ const InProgress = () => {
                 </thead>
                 <hr></hr>
                 <tbody>
-                  {inProgressParkings.map((parking) => (
+                  {upcomingParkings.map((parking) => (
                     <tr>
                       <td>{parking.parkingId}</td>
                       <td>{parking.address}</td>
@@ -97,4 +97,4 @@ const InProgress = () => {
   )
 }
 
-export default InProgress 
+export default Upcoming;

@@ -15,8 +15,6 @@
     display: flex;
    flex-flow: row wrap;
     justify-content: start;
-    
- 
 }
 .dashbox{
     background: #fff;
