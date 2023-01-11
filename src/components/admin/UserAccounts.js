@@ -145,9 +145,12 @@ const UserAccounts = () => {
                             <li>
                               <Link
                                 className="link"
-                                style={{ textDecoration: "none" }}
+                                style={{
+                                  textDecoration: "none",
+                                  color: "#888888",
+                                }}
                                 to="/Admin/UserAccounts/ViewProfile"
-                                state={{ id: docId.current }}
+                                state={{ id: docId.current, isEdit: false }}
                               >
                                 {" "}
                                 View User Profile
@@ -156,15 +159,26 @@ const UserAccounts = () => {
                             <li>
                               <Link
                                 className="link"
-                                style={{ textDecoration: "none" }}
+                                style={{
+                                  textDecoration: "none",
+                                  color: "#888888",
+                                }}
                                 to="/Admin/UserAccounts/ViewProfile"
-                                state={{ id: docId.current }}
+                                state={{ id: docId.current, isEdit: true }}
                               >
                                 {" "}
                                 Edit User
                               </Link>
                             </li>
-                            <li>Delete User</li>
+                            <li
+                              onClick={() => {
+                                setIsOpen();
+                                toggleDeleteNotice();
+                              }}
+                              style={{ color: "#888888", cursor: "pointer" }}
+                            >
+                              Delete User
+                            </li>
                           </ul>
                         )}
                       </div>

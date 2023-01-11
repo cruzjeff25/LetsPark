@@ -1,5 +1,13 @@
 import { firestore } from "../firebase";
-import { deleteDoc, doc, updateDoc } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  deleteDoc,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
+
+const adminCollection = collection(firestore, "admin");
 
 class FirebaseServices {
   updateUserDetails = (uid, newName, newPhone) => {
@@ -52,6 +60,34 @@ class FirebaseServices {
     try {
       let docRef = doc(firestore, `parking-spaces/${uid}`);
       return deleteDoc(docRef);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  addAmin = (admin) => {
+    try {
+      return addDoc(adminCollection, admin);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  deleteAdmin = (uid) => {
+    try {
+      let docRef = doc(firestore, `admin/${uid}`);
+      return deleteDoc(docRef);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  disableAdmin = (uid) => {
+    try {
+      let docRef = doc(firestore, `admin/${uid}`);
+      return updateDoc(docRef, {
+        permission: false,
+      });
     } catch (error) {
       console.log(error);
     }

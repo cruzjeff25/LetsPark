@@ -154,11 +154,15 @@ const Registered = () => {
                                   <li>
                                     <Link
                                       className="link"
-                                      style={{ textDecoration: "none" }}
+                                      style={{
+                                        textDecoration: "none",
+                                        color: "#888888",
+                                      }}
                                       to="/Admin/ParkingSpaces/Registered/ViewSpace"
                                       state={{
                                         id: docId.current,
                                         approved: true,
+                                        isEditing: false,
                                       }}
                                     >
                                       {" "}
@@ -168,11 +172,15 @@ const Registered = () => {
                                   <li>
                                     <Link
                                       className="link"
-                                      style={{ textDecoration: "none" }}
+                                      style={{
+                                        textDecoration: "none",
+                                        color: "#888888",
+                                      }}
                                       to="/Admin/ParkingSpaces/Registered/ViewSpace"
                                       state={{
                                         id: docId.current,
                                         approved: true,
+                                        isEditing: true,
                                       }}
                                     >
                                       {" "}
