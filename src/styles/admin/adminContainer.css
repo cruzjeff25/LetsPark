@@ -173,10 +173,10 @@ td{
     max-height: auto;
     
   }
-  p {
+.popup  p {
     margin: 0;
     }
-    :last-child {
+.popup  :last-child {
       margin: 0;
     }
   
