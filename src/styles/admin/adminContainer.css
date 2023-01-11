@@ -133,12 +133,12 @@ td{
 	background: #fff;
 	border: 1px solid #666;
   border-radius: 30px;
-	width: 40%;
-  height: 55%;
+	width: 45%;
+  height: fit-content;
 	box-shadow: 0 0 50px rgba(0,0,0,0.5);
 	position: absolute;
   top: 20%;
-  left: 40%;
+  left: 37%;
 }
   .light {
     border-color: #aaa;
@@ -179,24 +179,37 @@ td{
 .popup  :last-child {
       margin: 0;
     }
-  
+.popup .inputform{
+  display: flex;
+  flex-flow: row wrap;
+}
+.popup .item{
+
+display: flex;
+flex-flow: column wrap;
+width: 40%;
+
+padding: 1%;
+}
+
 .popup input{
-  display: inline-block;
   border: #888888 solid 1px;
   border-radius: 5px;
-  font-size: 2vh;
+  font-size: 1.7vh;
   color: #888888;
   padding: 0;
   background: #fff;
+  margin: 0%;
+  width: 50%
 }
 .popup label{
   font-weight: bold;
-  font-size: 2vh;
-  margin-left: 2%;
+  font-size: 1.7vh;
+  margin-left: 0%;
 }
 
-.popup button{
-  margin-top: 15%;
+.popup .button button{
+  margin-top: 5%;
   float: right;
   background-color: #4888ff; 
   border-radius: 25px;
@@ -204,7 +217,7 @@ td{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   font-size: 1.5vh;
   cursor: pointer;
   margin-left: 2%;
