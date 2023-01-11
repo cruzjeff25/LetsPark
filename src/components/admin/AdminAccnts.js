@@ -32,6 +32,7 @@ const AdminAccnts = () => {
             ADD ADMIN
           </a>
           <div id="add_admin" class="overlay">
+<<<<<<< HEAD
             <div class="popup">
               <h2>ADD AN ADMIN ACCOUNT</h2>
 
@@ -70,6 +71,52 @@ const AdminAccnts = () => {
               </div>
             </div>
           </div>
+=======
+	<div class="popup">
+		<h2>ADD AN ADMIN ACCOUNT</h2>
+    
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <form>
+        <div className='inputform'>
+          <div class="item">
+      <label>First Name:  
+    <input type="text" placeholder="Enter First Name"></input>
+    </label>
+    </div>
+    <div class="item">
+    <label>Last Name:  
+    <input type="text" placeholder="Enter Last Name"></input>
+    </label>
+    </div>
+
+    <div class="item">
+    <label>Username:  
+    <input type="text" placeholder="Enter Username"></input>
+    </label>
+    </div>
+    <div class="item">
+    <label>Password:  
+    <input type="password" placeholder=""></input>
+    </label>
+    </div>
+
+    <div class="item">
+    <label>Confirm Password:  
+    <input type="password" placeholder=""></input>
+    </label>
+    </div>
+    </div>
+    <div className='button'>
+    <button>Add Admin</button>
+    <button >Cancel</button>
+    </div>
+    </form>
+    
+    </div>
+	</div>
+</div>
+>>>>>>> a3396592a7eca86dc8ac8ab7e0986030a56dbc79
         </div>
         <table>
           <thead>
