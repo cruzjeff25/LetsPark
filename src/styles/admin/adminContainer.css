@@ -134,10 +134,10 @@ td{
 	border: 1px solid #666;
   border-radius: 30px;
 	width: 40%;
-  height: 50%;
+  height: 55%;
 	box-shadow: 0 0 50px rgba(0,0,0,0.5);
 	position: absolute;
-  top: 30%;
+  top: 20%;
   left: 40%;
 }
   .light {
@@ -196,7 +196,7 @@ td{
 }
 
 .popup button{
-  margin-top: 10%;
+  margin-top: 15%;
   float: right;
   background-color: #4888ff; 
   border-radius: 25px;
