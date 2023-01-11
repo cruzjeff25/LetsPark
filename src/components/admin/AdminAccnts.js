@@ -1,14 +1,13 @@
-import React, { useRef, useState } from 'react'
-import '../../styles/admin/adminaccnts.css'
-import "../../styles/admin/adminContainer.css"
-import { firestore } from '../../firebase';
+import React, { useRef, useState } from "react";
+import "../../styles/admin/adminaccnts.css";
+import "../../styles/admin/adminContainer.css";
+import { firestore } from "../../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
-import ReactLoading from 'react-loading';
+import ReactLoading from "react-loading";
 
-const usersCollection = collection(firestore, 'admin');
+const usersCollection = collection(firestore, "admin");
 
 const AdminAccnts = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [admins, setAdmins] = useState([]);
   const selectedIndex = useRef();
@@ -19,45 +18,58 @@ const AdminAccnts = () => {
   });
 
   return (
-    <div className='adminaccnts'>
+    <div className="adminaccnts">
       <h1>ADMIN ACCOUNTS</h1>
-      <div className='adminContainer'>
+      <div className="adminContainer">
         <div>
-          <input class='input1'type="text" placeholder="Search by ID or Name"></input>
-          <button className='search'>SEARCH</button>
-          <a button class="button" className='add'href="#add_admin">ADD ADMIN</a>
+          <input
+            class="input1"
+            type="text"
+            placeholder="Search by ID or Name"
+          ></input>
+          <button className="search">SEARCH</button>
+          <a button class="button" className="add" href="#add_admin">
+            ADD ADMIN
+          </a>
           <div id="add_admin" class="overlay">
-	<div class="popup">
-		<h2>ADD AN ADMIN ACCOUNT</h2>
-    
-		<a class="close" href="">&times;</a>
-		<div class="content">
-      <form>
-      <label>First Name:  
-    <input type="text" placeholder="Enter First Name"></input>
-    </label>
-    <label>Last Name:  
-    <input type="text" placeholder="Enter Last Name"></input>
-    </label>
-    
-    <div>
-    <label>Username:  
-    <input type="text" placeholder="Enter Username"></input>
-    </label>
-    <label>Password:  
-    <input type="password" placeholder=""></input>
-    </label>
-    <hr/>
-    <label>Confirm Password:  
-    <input type="password" placeholder=""></input>
-    </label>
-		</div>
-    <button>Add Admin</button>
-    <button >Cancel</button>
-    </form>
-    </div>
-	</div>
-</div>
+            <div class="popup">
+              <h2>ADD AN ADMIN ACCOUNT</h2>
+
+              <a class="close" href="">
+                &times;
+              </a>
+              <div class="content">
+                <form>
+                  <label>
+                    First Name:
+                    <input type="text" placeholder="Enter First Name"></input>
+                  </label>
+                  <label>
+                    Last Name:
+                    <input type="text" placeholder="Enter Last Name"></input>
+                  </label>
+
+                  <div>
+                    <label>
+                      Username:
+                      <input type="text" placeholder="Enter Username"></input>
+                    </label>
+                    <label>
+                      Password:
+                      <input type="password" placeholder=""></input>
+                    </label>
+                    <hr />
+                    <label>
+                      Confirm Password:
+                      <input type="password" placeholder=""></input>
+                    </label>
+                  </div>
+                  <button>Add Admin</button>
+                  <button>Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
         <table>
           <thead>
@@ -74,14 +86,18 @@ const AdminAccnts = () => {
                 <td>{admin.id}</td>
                 <td>{admin.username}</td>
                 <td>{admin.name}</td>
-                <td>{admin.permission ? "True" : "False"}
+                <td>
+                  {admin.permission ? "True" : "False"}
                   <div className="kebab-menu">
-                    <button className="kebab-menu" onClick={() => {
-                      docId.current = admin.id;
-                      selectedIndex.current = index;
-                      setIsOpen(!isOpen);
-                    }}></button>
-                    {(index == selectedIndex.current) && isOpen && (
+                    <button
+                      className="kebab-menu"
+                      onClick={() => {
+                        docId.current = admin.id;
+                        selectedIndex.current = index;
+                        setIsOpen(!isOpen);
+                      }}
+                    ></button>
+                    {index == selectedIndex.current && isOpen && (
                       <ul>
                         <li>Disable permission</li>
                         <li>Delete admin</li>
@@ -95,7 +111,7 @@ const AdminAccnts = () => {
         </table>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AdminAccnts
+export default AdminAccnts;
