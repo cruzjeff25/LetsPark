@@ -155,7 +155,7 @@ const View = () => {
             <div className="con">
               <div className="left-con">
                 <div className="img-con">
-                  <img src={logo} alt="logo" />
+                  <img src={space.spaceImages[0]} alt="logo" />
                 </div>
                 <label for="id">Parking Space ID</label>
                 <br />

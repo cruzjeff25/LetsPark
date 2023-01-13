@@ -32,7 +32,7 @@ const Login = () => {
     const snapshot = await getDocs(adminCollection);
 
     for (const doc of snapshot.docs) {
-      if (doc.data()["username"] === username && doc.data()["password"]) {
+      if (doc.data()["username"] === username && doc.data()["password"] === password) {
         result = doc.data();
         break;
       }
