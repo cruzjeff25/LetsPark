@@ -21,6 +21,7 @@
     font-size: 14px;
     border-radius: 7px;
     outline: none;
+    word-wrap:break-word;
 }
 
 .fieldRow {
