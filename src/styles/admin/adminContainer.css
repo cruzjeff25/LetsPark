@@ -1,0 +1,224 @@
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+th, td {
+    /* cellpadding */
+    padding: 16px;
+    border: #f0f4f5 solid .5px;
+}
+td{
+    color: #888888 ;
+}
+.adminContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    padding: 16px;
+}
+
+.adminContainer input{
+    margin-bottom: 50px;
+    border: 2px solid #888888 ;
+    width: 30%;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.adminContainer .search, .adminContainer .add{
+    margin-left: 1%;
+    background-color: #4888ff; 
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.adminContainer .add{
+    float: right;
+}
+
+/*KEBAB----------------------------------------------------------------------*/
+
+
+.kebab-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+    
+  }
+  
+  .kebab-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  
+  }
+  
+  .kebab-menu button::before {
+    content: "⋮";
+    font-size: 1.25rem;
+  }
+  
+  .kebab-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: calc(100% + 0px);
+    right: calc(100% + 0px);
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+  
+  .kebab-menu li {
+    padding: 10px;
+    
+  }
+  
+  .kebab-menu li:hover {
+    background-color: lightgray;
+  }
+
+/*MODAL----------------------------------------------------------------------*/
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+	transition: opacity 200ms;
+  visibility: hidden;
+	opacity: 0;
+}
+	.light {
+    background: rgba(255,255,255,0.5);
+  }
+  .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  :target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.popup {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #666;
+  border-radius: 30px;
+	width: 45%;
+  height: fit-content;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	position: absolute;
+  top: 20%;
+  left: 37%;
+}
+  .light {
+    border-color: #aaa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+ .popup h2 {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+    font-weight: bold;
+    border-bottom: #888888 solid 1px;
+  }
+  .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+  }
+    :hover {
+      opacity: 1;
+    }
+  
+  .content {
+    max-height: auto;
+    
+  }
+.popup  p {
+    margin: 0;
+    }
+.popup  :last-child {
+      margin: 0;
+    }
+.popup .inputform{
+  display: flex;
+  flex-flow: row wrap;
+}
+.popup .item{
+
+display: flex;
+flex-flow: column wrap;
+width: 40%;
+
+padding: 1%;
+}
+
+.popup input{
+  border: #888888 solid 1px;
+  border-radius: 5px;
+  font-size: 1.7vh;
+  color: #888888;
+  padding: 0;
+  background: #fff;
+  margin: 0%;
+  width: 50%
+}
+.popup label{
+  font-weight: bold;
+  font-size: 1.7vh;
+  margin-left: 0%;
+}
+
+.popup .button button{
+  margin-top: 5%;
+  float: right;
+  background-color: #4888ff; 
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 1.5vh;
+  cursor: pointer;
+  margin-left: 2%;
+}

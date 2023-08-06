@@ -50,6 +50,9 @@
 
 .parkingSpace .container .con .left-con .img-con{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
     height: 200px;
     width: 200px;
     border-radius: 100%;
@@ -62,7 +65,7 @@
     justify-content: center;
     align-items: center;
     border: #888888 solid 1px;
-    width: 300px;
+    width: 85%;
     height: 200px;
     margin: 20px 0;
     padding: 10px;
@@ -88,7 +91,7 @@
 
 /* ---------right con--------- */
 .parkingSpace .container .con .right-con{
-    width: 70%;
+    width: 50%;
     height: 95%;
     padding-left: 15px;
 }
@@ -100,7 +103,7 @@
 }
     /*  */
 .parkingSpace .right-con .top .left{
-    width: 60%;
+    width: 70%;
     padding-right: 10px;
 }
 .parkingSpace .right-con .top input{
@@ -124,6 +127,7 @@
     padding: .4rem;
     color: #888888;
     resize: none;
+    width: 600px;
 }
 
 /* ----Views---- */

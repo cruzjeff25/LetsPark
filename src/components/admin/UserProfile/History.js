@@ -6,37 +6,33 @@ import { collection, doc, getDoc, onSnapshot } from "firebase/firestore";
 import ReactLoading from "react-loading";
 import { useDownloadExcel } from "react-export-table-to-excel";
 
-const InProgress = () => {
+const History = () => {
   const location = useLocation();
   const userParkingsCollection = collection(
     firestore,
     `user-data/${location.state.id}/user-parkings`
   );
-  const [inProgressParkings, setInProgressParkings] = useState([]);
-  const [noInProgress, setNoInProgress] = useState(false);
+  const [historyParkings, setHistoryParkings] = useState([]);
+  const [noHistory, setNoHistory] = useState(false);
   const tableRef = useRef(null);
 
   onSnapshot(userParkingsCollection, (snapshot) => {
     if (snapshot.docs.length > 0) {
-      setNoInProgress(false);
-      let inProgress = [];
+      setNoHistory(false);
+      let history = [];
       let now = new Date().getTime();
       snapshot.docs.forEach((doc) => {
-        if (
-          doc.data()["inProgress"] === true &&
-          now >= doc.data()["arrival"] &&
-          now < doc.data()["departure"]
-        ) {
-          inProgress.push({ ...doc.data(), id: doc.id });
+        if (doc.data()["departure"] <= now) {
+          history.push({ ...doc.data(), id: doc.id });
         }
       });
-      if (inProgress.length > 0) {
-        setInProgressParkings(inProgress);
+      if (history.length > 0) {
+        setHistoryParkings(history);
       } else {
-        setNoInProgress(true);
+        setNoHistory(true);
       }
     } else {
-      setNoInProgress(true);
+      setNoHistory(true);
     }
   });
 
@@ -46,7 +42,7 @@ const InProgress = () => {
   const filterData = (e) => {
     if (e.target.value !== "") {
       setValue(e.target.value);
-      const filterTable = inProgressParkings.filter((o) =>
+      const filterTable = historyParkings.filter((o) =>
         Object.keys(o).some((k) =>
           String(o[k]).toLowerCase().includes(e.target.value.toLowerCase())
         )
@@ -54,14 +50,14 @@ const InProgress = () => {
       setTableFilter([...filterTable]);
     } else {
       setValue(e.target.value);
-      setInProgressParkings([...inProgressParkings]);
+      setHistoryParkings([...historyParkings]);
     }
   };
 
   const { onDownload } = useDownloadExcel({
     currentTableRef: tableRef.current,
-    filename: `inprogress-sessions-user${location.state.id}`,
-    sheet: "In Progress",
+    filename: `history-sessions-user${location.state.id}`,
+    sheet: "History",
   });
 
   function getDate(date) {
@@ -73,17 +69,17 @@ const InProgress = () => {
     <div className="inprogress">
       <h1>USER ACCOUNTS</h1>
       <div className="inprogressContainer">
-        <h1>VIEW USER IN PROGRESS PARKING-({location.state.name})</h1>
+        <h1>VIEW USER PARKING HISTORY-({location.state.name})</h1>
         <br />
         {/* <div className='views-nav'>
           <Link className='link' to="/Admin/UserAccounts/ViewProfile" > Go back to Profile</Link>
         </div> */}
         <br />
-        {noInProgress ? (
+        {noHistory ? (
           <div style={{ textAlign: "center", fontSize: "14px", color: "gray" }}>
-            <p>No in progress parkings.</p>
+            <p>No finished parking sessions.</p>
           </div>
-        ) : inProgressParkings.length == 0 ? (
+        ) : historyParkings.length == 0 ? (
           <div
             className="loadingContainer"
             style={{
@@ -112,7 +108,7 @@ const InProgress = () => {
               </button>
             </div>
             <div class="fix-width">
-              <table ref={tableRef}>
+              <table>
                 <thead>
                   <tr>
                     <th>ID</th>
@@ -142,7 +138,7 @@ const InProgress = () => {
                           <td>{parking.plateNumber}</td>
                         </tr>
                       ))
-                    : inProgressParkings.map((parking) => (
+                    : historyParkings.map((parking) => (
                         <tr>
                           <td>{parking.parkingId}</td>
                           <td>{parking.address}</td>
@@ -165,4 +161,4 @@ const InProgress = () => {
   );
 };
 
-export default InProgress;
+export default History;
